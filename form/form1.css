@@ -1,0 +1,211 @@
+/* 
+
+    Nizhamuddin Ahmad
+    2501996360
+
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+
+
+:root{
+    /* ### Primary */
+    --Pale--blue: hsl(225, 100%, 94%);
+    --Bright--blue: rgb(56, 41, 224);
+    /* ### Neutral */
+    --Very--pale--blue: hsl(225, 100%, 98%);
+    --Desaturated--blue: hsl(224, 23%, 55%);
+    --Dark--blue: hsl(223, 47%, 23%);
+    /* ### Addition*/
+    --purple--:rgb(94, 94, 236);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(/HCI/Individual/pattern-background-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    max-width: 850px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    background: white;
+}
+
+.login h1{
+    font-size: 2rem;
+    margin-top: 0px;
+    padding-left: 8vh;
+}
+.login-image img{
+    /* background-size: contain; */
+    width: 430px;
+    margin: 0px 0px -3px 0px;
+}
+
+.login{
+    padding: 70px 60px ;
+    background: var(--purple--);
+}
+
+.login .x1 .x2{
+    height: 300px;
+}
+
+
+h1{
+    color: white;
+    margin-top: 10px;
+    font-size: 2.5rem;
+}
+
+form{
+    width: 350px;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+form i{
+    position: relative;
+    top: 23px;
+    left: 15px;
+    color:var(--purple--) ;
+}
+
+input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 9px 40px;
+    border-radius: 18px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+button{
+    border: none;
+    outline: none;
+    margin: 5px 10px 0px 10px;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+a{
+    font-size: 10px;
+    margin: 0px 0px 0px 250px;
+    text-decoration: none;
+    color: white;
+}
+
+.new-acc{
+    background-color: var(--Bright--blue);
+    color: white;
+}
+
+.existing-acc{
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+}
+
+/* .icons{
+    width: 330px;
+    padding: 2rem 0 1rem 0;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+} */
+
+.option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.icons{
+    display: flex;    
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-right: 500px; */
+}
+
+.icons i{
+    padding: 00.8rem 1.5rem;
+    border-radius: 10px;
+    margin-left: 0.9rem;
+    margin-bottom: -23px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+
+/* .icons i:hover{
+    color: #fff !important;
+    background: #07001f;
+    transition: 1s;
+} */
+.icons i:hover{
+    transform: translateY(-10px);
+}
+
+.icons i:nth-child(1){
+    color: black;
+}
+
+.icons i:nth-child(2){
+    color: rgb(235, 98, 19);
+}
+
+.icons i:nth-child(3){
+    color: #00acee;
+}
+
+
+@media(max-width:768px){
+
+    .login-image img{
+        /* background-size: contain; */
+        display: none;
+    }
+    
+    .login{
+        width: 100%;
+    }
+
+    .login h1{
+        display: flex;
+        justify-content: center;
+        margin-left: -4rem;
+    }
+
+    form{
+        width: 300px;
+        margin: 40px auto;
+    }
+    a{
+        font-size: .9rem;
+        margin-left: 200px;
+    }
+    
+}
