@@ -1,0 +1,211 @@
+/*  
+    Nizhamuddin Ahmad
+    2501996360
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+
+:root{
+    /* ### Primary */
+    --Pale--blue: hsl(225, 100%, 94%);
+    --Bright--blue: rgb(56, 41, 224);
+    /* ### Neutral */
+    --Very--pale--blue: hsl(225, 100%, 98%);
+    --Desaturated--blue: hsl(224, 23%, 55%);
+    --Dark--blue: hsl(223, 47%, 23%);
+    /* ### Addition*/
+    --purple--:rgb(94, 94, 236);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: var(--purple--);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.3rem;
+    color: white;
+    text-decoration:none ;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+#brand{
+    padding: 0px 0px 0px 10px;
+}
+
+.nav-icon{
+    font-size: 2rem;
+}
+
+.nav-link{
+    transition: 0.7s ease;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+header .nav-item a:hover{
+    color: var(--Dark--blue);
+}
+
+/* .home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap 
+} */
+
+.home{
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 105%;
+    padding: 1.5rem 7%;
+    padding-top: 4rem;
+    z-index: 0;
+}
+
+.home .content{
+    flex: 1 1 40rem;
+    padding-top: 5rem;
+}
+
+.home h2{
+    font-size: 3rem;
+    color: var(--Pale--blue);
+}
+
+.home p{
+    font-size: 1.8rem;
+    color: white;
+    padding: 0.5rem 0;
+}
+
+.animated-text{
+    position: relative;
+    height: 70px;
+    overflow: hidden;
+}
+
+.animated-text h3{
+    color: var(--Very--pale--blue);
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0.5px;
+}
+
+.animated-text h3:nth-child(1){
+    animation: text-move 10s infinite;
+}
+
+@keyframes text-move{
+    0%{
+        margin-top: 0;
+    }
+    25%{
+        margin-top: -70px;
+    }
+    50%{
+        margin-top: -140px;
+    }
+    75%{
+        margin-top: -70px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+
+.btn{
+    font-size: 1rem;
+    padding: 0.7rem 3.5rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    border: none;
+    overflow: hidden;
+    z-index: 0;
+    margin-left: 35px;
+}
+
+.btn:hover{
+    transform: translate(20px);
+}
+/* responsive */
+
+@media(max-width:768px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        text-align: center;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--Desaturated--blue);
+        width: 100%;
+        transform: 0.4s;
+    }
+    .nav-item{
+        margin: 15px 0px;
+    }
+
+    .nav-menu.active{
+        left: 0;
+        z-index: 1000;
+    }
+ 
+}

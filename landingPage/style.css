@@ -1,0 +1,165 @@
+/*  
+    Nizhamuddin Ahmad
+    2501996360
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+
+:root{
+    /* ### Primary */
+    --Pale--blue: hsl(225, 100%, 94%);
+    --Bright--blue: rgb(56, 41, 224);
+    /* ### Neutral */
+    --Very--pale--blue: hsl(225, 100%, 98%);
+    --Desaturated--blue: hsl(224, 23%, 55%);
+    --Dark--blue: hsl(223, 47%, 23%);
+}
+
+*{
+    font-family: 'Raleway', sans-serif;
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    scroll-behavior: smooth;
+}
+
+/* *::selection{
+    color: white;
+    background: #2273F8;
+} */
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden ;
+}
+
+header{
+    width: 100%;
+    padding: 2rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    background:var(--Bright--blue);
+}
+
+header .brand-icon{
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+header .brand-icon i{
+    padding: 0 .3rem;
+}
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    transition: 0.7s ease;
+    gap: auto;
+    padding: 0 0.1rem;
+}
+
+header .navbar ul li a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: white;
+    position: relative;
+}
+
+header .navbar ul li a::before{
+    content: '';
+    position: absolute;
+    bottom:-.5rem; 
+    right:0;
+    width:0%;
+    height:.2rem;
+    background:white;
+    transition: .2s linear;
+}
+
+header .navbar ul li a.nav-menu,
+header .navbar ul li a:hover::before{
+    left: 0;
+    width: 100%;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+
+/* .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+} */
+
+
+/* responsive */
+
+@media (max-width:768px){
+    html{
+        font-size: 65%;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navbar{
+        position: fixed;
+        left: 0;
+        top: -120%;
+        width: 100%;
+        opacity: 0;
+        gap: 0;
+        background-color: black;
+        flex-direction: column;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-link{
+        margin: 15px 0px;
+    }
+
+    .navbar.active{
+        left: 0;
+    }
+    /* header .navbar ul{
+        justify-content: center;
+        flex-flow: column;
+        padding: 2rem 0;
+    }
+    header .navbar ul li a{
+        font-size: 2rem;
+        color: #333;
+        display: block;
+        margin: 1rem 0;
+    } */
+} 
