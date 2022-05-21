@@ -1,7 +1,7 @@
-/*-------------- Google fonts ---------------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=PT+Serif:wght@400;700&display=swap');
 
-/* mobile first */
+
 
 :root{
     /*-------- font-family --------*/
@@ -9,9 +9,9 @@
     --para-font: 'Outfit', sans-serif;
 
     /*-------- Colors ----------*/
-    --primary-color: #dd9d4c;            /*-- Light brown color ---*/
-    --secondary-color: #2d3436;          /*-- light black color --*/
-    --body-color: #f6f1ed;               /*-- Extra light pink color --*/
+    --primary-color: #dd9d4c;           
+    --secondary-color: #2d3436;          
+    --body-color: #f6f1ed;               
     --white-color: #ffffff;
 
 
@@ -39,7 +39,7 @@ html{
 }
 
 body{
-    background-color: var(--body-color);
+    background-color: var(--Very--pale--blue);
 }
 
 img{
@@ -50,7 +50,7 @@ img{
 
 .btn{
     color: white;
-    background-color: var(--primary-color);
+    background-color: var(--Dark--blue);
     font-family: var(--para-font);
     font-size: 1.3rem;
     border: none;
@@ -71,7 +71,7 @@ img{
 }
 
 .para-line{
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 200;
     font-family: var(--para-font);
 }
@@ -118,16 +118,21 @@ img{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 5.5rem;
+    gap: 4.5rem;
 }
 
 .craft .container .row .column{
     width: 100%;
 }
 
+.craft .container .row .column .heading{
+    color: var(--Dark--blue);
+    font-size: 5rem;
+}
+
 .craft .container .row .column img{
-    width: 27rem;
-    height: 27rem;
+    width: 29rem;
+    height: 29rem;
 }
 
 
@@ -160,9 +165,9 @@ img{
     width: 100%;
 }
 
-.product{
+/* .product{
     transition: 0.5s;
-}
+} */
 
 .product:hover{
     transform: translateY(-10px);
@@ -174,3 +179,68 @@ img{
 }
 
 
+.portfolios{
+    height: 100vh;
+    /* margin-bottom: 5rem; */
+}
+.portfolios .container{
+    padding: 6rem;
+}
+
+.portfolios .container .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 30px;
+    padding-bottom: 2rem;
+}
+
+
+.portfolios .name{
+    font-size: 1.8rem;
+}
+
+.portfolio .portfolio-img{
+    width: 25rem;
+    height: 25rem;
+    cursor: pointer;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-position: center center;
+    background-image: url(/HCI/Individual/productUI/temp2.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.footer .container{
+    padding: 5rem;
+    width: 100%;
+}
+
+.footer .container .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 3rem;
+    gap: 30px;
+}
+
+.footer .container .row .column{
+    width: 100%;
+}
+
+.footer-heading{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.white{
+    font-size: 1.5rem;
+}
