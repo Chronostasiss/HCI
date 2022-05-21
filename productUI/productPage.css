@@ -1,4 +1,9 @@
+/* 
 
+    Nizhamuddin Ahmad
+    2501996360
+
+*/
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=PT+Serif:wght@400;700&display=swap');
 
 
@@ -184,7 +189,8 @@ img{
     /* margin-bottom: 5rem; */
 }
 .portfolios .container{
-    padding: 6rem;
+    padding: 3rem;
+    padding: 3rem 1rem 4rem 4rem;
 }
 
 .portfolios .container .row{
@@ -212,15 +218,16 @@ img{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-position: center center;
+    /* background-position: center center; */
     background-image: url(/HCI/Individual/productUI/temp2.jpg);
     background-repeat: no-repeat;
-    background-position: top center;
+    /* background-position: top center; */
 }
 
 .footer .container{
     padding: 5rem;
     width: 100%;
+    color: white;
 }
 
 .footer .container .row{
@@ -238,9 +245,142 @@ img{
 
 .footer-heading{
     font-size: 1.2rem;
-    color: white;
+    width: 50%;
+    /* color: white;     */
 }
 
 .white{
     font-size: 1.5rem;
+    width: 75%;
+}
+
+.footer-distributed{
+	background: var(--Very--pale--blue);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+}
+
+
+/* Footer left */
+.footer-distributed .footer-left{
+	float: left;
+}
+
+/* The company logo */
+.footer-distributed h3{
+	color:  var(--Dark--blue);
+	font: normal 36px 'Raleway', cursive;
+	margin: 0 0 10px;
+}
+
+.footer-distributed h3 span{
+	color:  var(--Dark--blue);
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  var(--Dark--blue);
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer social icons */
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color:black;
+}
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:var(--Desaturated--blue);
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  black;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 15px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
 }
