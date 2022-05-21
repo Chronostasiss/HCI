@@ -1,0 +1,176 @@
+/*-------------- Google fonts ---------------*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=PT+Serif:wght@400;700&display=swap');
+
+/* mobile first */
+
+:root{
+    /*-------- font-family --------*/
+    --heading-font: 'PT Serif', serif;
+    --para-font: 'Outfit', sans-serif;
+
+    /*-------- Colors ----------*/
+    --primary-color: #dd9d4c;            /*-- Light brown color ---*/
+    --secondary-color: #2d3436;          /*-- light black color --*/
+    --body-color: #f6f1ed;               /*-- Extra light pink color --*/
+    --white-color: #ffffff;
+
+
+    /* ### Primary */
+    --Pale--blue: hsl(225, 100%, 94%);
+    --Bright--blue: rgb(56, 41, 224);
+    /* ### Neutral */
+    --Very--pale--blue: hsl(225, 100%, 98%);
+    --Desaturated--blue: hsl(224, 23%, 55%);
+    --Dark--blue: hsl(223, 47%, 23%);
+    /* ### Addition*/
+    --purple--:rgb(94, 94, 236);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: var(--body-color);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.btn{
+    color: white;
+    background-color: var(--primary-color);
+    font-family: var(--para-font);
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    padding: 0.7rem 1.2rem;
+    width: max-content;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover{
+    transform: translate(10px);
+}
+
+.heading{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.para-line{
+    font-size: 1rem;
+    font-weight: 200;
+    font-family: var(--para-font);
+}
+
+.header{
+    height: 100vh;
+    background-image: url(/HCI/Individual/productUI/house2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* object-fit: scale-down; */
+    /* width: 100%; */
+}
+.header .container{
+    padding:  19rem 6rem;
+}
+
+.logo{
+    font-size: 2rem;
+    line-height: 1.3;
+    color: white;
+    gap: 10px;
+}
+
+/* .logo i{
+    font-size: 1rem;
+} */
+
+.hero-content .main-heading{
+    font-size: 3rem;
+    color: var(--Very--pale--blue);
+    width: 30%;
+    margin-bottom: 5rem;
+}
+
+.craft{
+    height: 100vh;
+}
+
+.craft .container{
+    padding: 7.5rem;
+}
+
+.craft .container .row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5.5rem;
+}
+
+.craft .container .row .column{
+    width: 100%;
+}
+
+.craft .container .row .column img{
+    width: 27rem;
+    height: 27rem;
+}
+
+
+
+.products .container{
+    padding: 7rem  7rem 10rem 7rem;
+}
+
+.products .container .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 3rem;
+}
+
+.products .container .row .column{
+    width: 100%;
+}
+.products .container .row .column .heading{
+    margin-top: 5rem;
+    font-size: 1.7rem;
+}
+
+.product .product-img, .product .name{
+    cursor: pointer;
+}
+
+.product .product-img{
+    height: 100%;
+    width: 100%;
+}
+
+.product{
+    transition: 0.5s;
+}
+
+.product:hover{
+    transform: translateY(-10px);
+}
+
+.product .name{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
